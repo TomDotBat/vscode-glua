@@ -13,7 +13,6 @@
 		["[", "]"],
 		["(", ")"],
 		["\"", "\""],
-		["'", "'"],
 		{ "open": "/*", "close": "\n\n*/", "notIn": ["string", "comment"] },
 		{ "open": "--[[", "close": "\n\n]]", "notIn": ["string", "comment"] }
 	],
