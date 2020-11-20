@@ -42,5 +42,36 @@
 		],
 		"prefix": "a-ipairsloop",
 		"description": "Makes an ipairs loop"
+	},
+	"a-metatable-class":
+	{
+		"body":
+		[
+			"local ${1:className} = {}",
+			"${1:className}.__index = ${1:className}\n",
+			"function ${1:className}.new()",
+			"\tlocal tbl = setmetatable({}, ${1:className})",
+			"\t$0",
+			"\treturn tbl",
+			"end"
+		],
+		"prefix": "a-metatable-class",
+		"description": "Makes a simple metatable based class"
+	},
+	"a-inherited-metatable-class":
+	{
+		"body":
+		[
+			"local ${1:className} = {}",
+			"${1:className}.__index = ${1:className}\n",
+			"setmetatable(${1:className}, {__index = ${2:parentName}})\n",
+			"function ${1:className}.new()",
+			"\tlocal tbl = setmetatable({}, ${1:className})",
+			"\t$0",
+			"\treturn tbl",
+			"end"
+		],
+		"prefix": "a-inherited-metatable-class",
+		"description": "Makes a simple inherited metatable based class"
 	}
 }
