@@ -270,7 +270,7 @@
 		<!-- Control keywords -->
 		<dict>
 			<key>match</key>
-			<string>\b(break|do|else|for|if|elseif|return|then|repeat|while|until|end|function|local|in|continue|goto)\b</string>
+			<string>\b(and|or|break|do|else|for|if|elseif|return|then|repeat|while|until|end|function|local|in|continue|goto)\b</string>
 			<key>name</key>
 			<string>keyword.control.lua</string>
 		</dict>
