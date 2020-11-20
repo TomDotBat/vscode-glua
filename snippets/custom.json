@@ -73,5 +73,21 @@
 		],
 		"prefix": "a-inherited-metatable-class",
 		"description": "Makes a simple inherited metatable based class"
-	}
+	},
+	"a-panel":
+	{
+		"body":
+		[
+			"local PANEL = {}\n",
+			"function PANEL:Init()\n\t$0",
+			"end\n",
+			"function PANEL:PerformLayout(w, h)\n",
+			"end\n",
+			"function PANEL:Paint(w, h)\n",
+			"end\n",
+			"vgui.Register(\"${1:panelName}\", PANEL, \"${2:baseName}\")"
+		],
+		"prefix": "a-panel",
+		"description": "Makes a panel table and register function"
+	},
 }
