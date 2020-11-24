@@ -90,4 +90,21 @@
 		"prefix": "a-panel",
 		"description": "Makes a panel table and register function"
 	},
+	"a-panel-test":
+	{
+		"body":
+		[
+			"if not IsValid(LocalPlayer()) then return end\n",
+			"if IsValid(testframe) then testframe:Remove() end",
+			"testframe = vgui.Create(\"${1:panelName}\")",
+			"testframe:SetPos(100, 100)",
+			"testframe:SetSize(200, 200)",
+			"testframe:MakePopup()\n",
+			"local child = vgui.Create(\"${2:childName}\", testframe)",
+			"child:SetPos(10, 10)",
+			"child:SetSize(80, 30)\n$0"
+		],
+		"prefix": "a-panel-test",
+		"description": "Makes a panel tester"
+	}
 }
