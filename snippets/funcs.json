@@ -4506,7 +4506,7 @@
   },
   "table.IsEmpty": {
     "prefix": "table.IsEmpty",
-    "body": "table.Copy(${1:table tbl})$0",
+    "body": "table.IsEmpty(${1:table tbl})$0",
     "description": "(All) Function: table.IsEmpty\n\nReturns whether or not the given table is empty."
   },
   "table.Copy": {
