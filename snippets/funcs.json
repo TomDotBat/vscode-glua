@@ -4504,6 +4504,11 @@
     "body": "table.concat(${1:table tbl}, ${2:string concatenator=\"\"}, ${3:number startPos=1}, ${4:number endPos=#tbl})$0",
     "description": "(All) Function: table.concat\n\nConcatenates the contents of a table to a string."
   },
+  "table.IsEmpty": {
+    "prefix": "table.IsEmpty",
+    "body": "table.Copy(${1:table tbl})$0",
+    "description": "(All) Function: table.IsEmpty\n\nReturns whether or not the given table is empty."
+  },
   "table.Copy": {
     "prefix": "table.Copy",
     "body": "table.Copy(${1:table originalTable})$0",
